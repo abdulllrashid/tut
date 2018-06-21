@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ubuntu.tut.Main6Activity">
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EVENT DETAILS"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="40dp"
+            android:textAlignment="center"
+            android:id="@+id/captext"
+
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_margin="10dp"
+            />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:layout_margin="5dp"
+                >
+
+                <TextView
+
+                    android:textColor="@android:color/holo_green_dark"
+                    android:text="Date"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_column="1"
+                    android:textSize="20dp"
+                    android:layout_margin="5dp"
+                    android:id="@+id/textView" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_column="2"
+                    android:gravity="left"
+                    android:textSize="20dp"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+
+                    />
+            </TableRow>
+
+
+            <TableRow>
+
+                <TextView
+                    android:text="Location"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:layout_column="1"
+                    android:textSize="20dp"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:layout_margin="5dp"
+                    />
+                <TextView
+                    android:layout_width="200dp"
+                    android:id="@+id/location"
+                    android:layout_column="2"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:layout_gravity="left"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+
+                    />
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="Description"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="140dp"
+                    android:layout_column="1"
+                    android:textSize="20dp"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:layout_margin="5dp"
+                    />
+                <TextView
+                    android:id="@+id/descption"
+                    android:layout_gravity="left"
+                    android:layout_column="2"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+
+                    android:layout_width="200dp" />
+            </TableRow>
+
+        </TableLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BOOK TICKET"
+            android:onClick="submit"
+            android:textColor="#ffffff"
+            android:background="@android:color/holo_green_dark"
+            android:layout_margin="15dp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
